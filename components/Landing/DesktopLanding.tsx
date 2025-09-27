@@ -82,6 +82,70 @@ export default function DesktopLanding() {
           `
         }}
       />
+
+      <Script
+        id="header-scroll-animation"
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              let showBookDemo = false;
+              const button = document.querySelector('.scroll-triggered-button');
+
+              if (!button) return;
+
+              // Set transition for smooth animations
+              button.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
+
+              const handleScroll = () => {
+                const heroSection = document.getElementById('hero-section');
+                const finalCtaSection = document.getElementById('final-cta-section');
+                const headerHeight = 80;
+
+                let shouldShowButton = true;
+
+                // Hide button if hero section is visible
+                if (heroSection) {
+                  const heroBottom = heroSection.getBoundingClientRect().bottom;
+                  if (heroBottom > headerHeight) {
+                    shouldShowButton = false;
+                  }
+                }
+
+                // Hide button if final CTA section is visible
+                if (finalCtaSection && shouldShowButton) {
+                  const finalCtaRect = finalCtaSection.getBoundingClientRect();
+                  const finalCtaTop = finalCtaRect.top;
+                  const finalCtaBottom = finalCtaRect.bottom;
+                  const windowHeight = window.innerHeight;
+                  const triggerDistance = 300;
+
+                  if (finalCtaTop < (windowHeight - triggerDistance) && finalCtaBottom > headerHeight) {
+                    shouldShowButton = false;
+                  }
+                }
+
+                if (shouldShowButton !== showBookDemo) {
+                  showBookDemo = shouldShowButton;
+
+                  if (shouldShowButton) {
+                    button.style.opacity = '1';
+                    button.style.transform = 'translateX(0)';
+                    button.style.pointerEvents = 'auto';
+                  } else {
+                    button.style.opacity = '0';
+                    button.style.transform = 'translateX(20px)';
+                    button.style.pointerEvents = 'none';
+                  }
+                }
+              };
+
+              window.addEventListener('scroll', handleScroll);
+              handleScroll(); // Initial call to set correct state
+            })();
+          `
+        }}
+      />
     </>
   );
 }
