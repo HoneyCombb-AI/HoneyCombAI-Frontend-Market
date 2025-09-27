@@ -16,6 +16,7 @@ pnpm dev
 bun dev
 
 npm run build > build.log 2>&1
+npx serve out
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

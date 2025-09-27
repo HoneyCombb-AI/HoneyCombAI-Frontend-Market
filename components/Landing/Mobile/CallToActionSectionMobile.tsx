@@ -1,12 +1,9 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Zap, TrendingUp, Users } from "lucide-react";
-import React, { JSX, useEffect } from "react";
+import React, { JSX } from "react";
 import { motion } from "framer-motion";
-import { getCalApi } from "@calcom/embed-react";
 
 export function CallToActionSectionMobile(): JSX.Element {
   const features = [
@@ -15,12 +12,6 @@ export function CallToActionSectionMobile(): JSX.Element {
     "Know who to contact, what will resonate, and when to reach out -Automatically",
   ];
 
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "30min" });
-      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    })();
-  }, []);
 
   return (
     <section className="relative w-full px-4 py-16 md:hidden">
@@ -113,7 +104,7 @@ export function CallToActionSectionMobile(): JSX.Element {
           variant="outline"
           className="w-full bg-amber-600 hover:bg-amber-500 border-[#0f4f48]/20 text-white h-12 rounded-lg font-semibold text-base"
           data-cal-namespace="30min"
-          data-cal-link="ankushnagathan/30min"
+          data-cal-link="shahzad-mir/30min"
           data-cal-config='{"layout":"month_view"}'
         >
           Book Demo
