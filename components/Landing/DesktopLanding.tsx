@@ -71,11 +71,6 @@ export default function DesktopLanding() {
 
             Cal("init", "30min", {origin:"https://app.cal.com"});
             Cal.ns["30min"]("ui", {
-              "theme":"light",
-              "cssVarsPerTheme":{
-                "light":{"cal-brand":"#ff8900"},
-                "dark":{"cal-brand":"#ffdd00"}
-              },
               "hideEventTypeDetails":false,
               "layout":"month_view"
             });
