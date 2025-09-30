@@ -33,8 +33,15 @@ const Header = () => {
             </div>
           </Link>
           <div className="flex items-center gap-2 ml-auto">
-            <a href="https://app.honeycomb.ai.in" className="cursor-pointer text-nav text-black px-2 sm:px-4 py-2 hover:bg-white rounded-md text-sm sm:text-base">
-              Enter App
+            <a
+              href="https://app.honeycombai.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer text-nav text-black px-2 sm:px-4 py-2 hover:bg-white rounded-md text-sm sm:text-base"
+            >
+              <span className="border-b-2 border-dashed border-black transition-all duration-300 pb-1">
+                Enter App
+              </span>
             </a>
             <Link href="/support" className="cursor-pointer text-nav text-black px-2 sm:px-4 py-2 hover:bg-white rounded-md text-sm sm:text-base">
               Support
