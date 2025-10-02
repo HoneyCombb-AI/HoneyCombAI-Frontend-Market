@@ -8,7 +8,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
 import emailjs from '@emailjs/browser';
-import axios from 'axios';
 
 const supportSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters long'),
@@ -18,6 +17,34 @@ const supportSchema = z.object({
 });
 
 type SupportFormData = z.infer<typeof supportSchema>;
+
+const RATE_LIMIT_KEY = 'support_form_submissions';
+const MAX_SUBMISSIONS = 2;
+const TIME_WINDOW = 60 * 60 * 1000; 
+function checkRateLimit(): { allowed: boolean; resetTime?: number } {
+  const now = Date.now();
+  const stored = localStorage.getItem(RATE_LIMIT_KEY);
+  if (!stored) {
+    return { allowed: true };
+  }
+  const submissions: number[] = JSON.parse(stored);
+  const recentSubmissions = submissions.filter(time => now - time < TIME_WINDOW);
+  if (recentSubmissions.length >= MAX_SUBMISSIONS) {
+    const oldestSubmission = Math.min(...recentSubmissions);
+    const resetTime = oldestSubmission + TIME_WINDOW;
+    return { allowed: false, resetTime };
+  }
+  return { allowed: true };
+}
+
+function recordSubmission() {
+  const now = Date.now();
+  const stored = localStorage.getItem(RATE_LIMIT_KEY);
+  const submissions: number[] = stored ? JSON.parse(stored) : [];
+  const recentSubmissions = submissions.filter(time => now - time < TIME_WINDOW);
+  recentSubmissions.push(now);
+  localStorage.setItem(RATE_LIMIT_KEY, JSON.stringify(recentSubmissions));
+}
 
 export default function SupportPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -36,25 +63,21 @@ export default function SupportPage() {
 
   const onSubmit = async (data: SupportFormData) => {
     setIsSubmitting(true);
-    
+
     try {
-      // Step 1: Validate and check rate limit with server
-      await axios.post('/api/support', data, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-
-
-      // Step 2: Send email directly via EmailJS
+      const rateLimitResult = checkRateLimit();
+      if (!rateLimitResult.allowed) {
+        const resetDate = new Date(rateLimitResult.resetTime!);
+        toast.error(`Too many requests. Please try again after ${resetDate.toLocaleTimeString()}`);
+        setIsSubmitting(false);
+        return;
+      }
       const combinedMessage = `Email: ${data.email}\n\n${data.message}`;
-      
       const templateParams = {
         name: data.name,
         title: data.title || 'Support Request',
         message: combinedMessage,
       };
-
 
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
@@ -63,19 +86,12 @@ export default function SupportPage() {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
 
-
+      recordSubmission();
       toast.success('Message sent successfully! We\'ll get back to you soon.');
       reset();
     } catch (error) {
       console.error('Error details:', error);
-      
-      // Handle Axios error responses
-      if (axios.isAxiosError(error)) {
-        const errorMessage = error.response?.data?.error || error.message || 'Server error';
-        toast.error(errorMessage);
-      } else {
-        toast.error(error instanceof Error ? error.message : 'Failed to send message');
-      }
+      toast.error(error instanceof Error ? error.message : 'Failed to send message');
     } finally {
       setIsSubmitting(false);
     }
