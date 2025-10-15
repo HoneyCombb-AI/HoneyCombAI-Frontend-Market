@@ -104,7 +104,7 @@ export function CallToActionSectionMobile(): JSX.Element {
           variant="outline"
           className="w-full bg-amber-600 hover:bg-amber-500 border-[#0f4f48]/20 text-white h-12 rounded-lg font-semibold text-base"
           data-cal-namespace="30min"
-          data-cal-link="shahzad-mir/30min"
+          data-cal-link="honeycombai/30min"
           data-cal-config='{"layout":"month_view"}'
         >
           Book Demo
