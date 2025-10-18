@@ -24,25 +24,25 @@ const InDepthResearch = () => {
       </div>
       <div className="mt-12">
         <div className="w-full rounded-xl border border-gray-200 bg-amber-50/60 p-4 shadow-sm">
-          <div className="flex w-full rounded-lg overflow-hidden bg-white border border-gray-200 min-h-[450px]">
-            <div className="flex-1 border-r border-black/10">
+          <div className="flex w-full rounded-lg overflow-hidden bg-white border border-gray-200 min-h-[500px]">
+            <div className="w-[45%] border-r border-black/10 flex items-center justify-center">
               <Image
                 src="/Research 1.png"
                 alt="In-Depth Research - Social Activity Analysis"
-                width={700}
-                height={450}
+                width={1398}
+                height={1684}
                 loading="lazy"
-                className="w-full h-full object-cover border-r border-black/20"
+                className="w-full h-full object-contain"
               />
             </div>
-            <div className="flex-1">
+            <div className="w-[55%] flex items-center justify-center">
               <Image
                 src="/Research 2.png"
                 alt="In-Depth Research - Strategic Recommendations"
-                width={700}
-                height={450}
+                width={1482}
+                height={1474}
                 loading="lazy"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
