@@ -1,10 +1,15 @@
-"use client"
-
+import Customization from "@/components/Landing/Desktop/customization";
+import DailySignals from "@/components/Landing/Desktop/daily-signals";
+import Faq from "@/components/Landing/Desktop/faq";
+import FinalCta from "@/components/Landing/Desktop/final-cta";
+import Footer from "@/components/Landing/Desktop/footer";
+import HeroSection from "@/components/Landing/Desktop/hero";
+import ImplementationTimeline from "@/components/Landing/Desktop/implementation-timeline";
+import InDepthResearch from "@/components/Landing/Desktop/in-depth-research";
+import Integrations from "@/components/Landing/Desktop/integrations";
+import SocialProof from "@/components/Landing/Desktop/social-proof";
+import Testimonials from "@/components/Landing/Desktop/testimonials";
 import { MobileHeader } from "@/components/Landing/Mobile/MobileHeader";
-import { HeroSectionMobile } from "@/components/Landing/Mobile/HeroSectionMobile";
-import { FeatureLayoutSectionMobile } from "@/components/Landing/Mobile/FeatureLayoutSectionMobile";
-import { TestimonialSectionMobile } from "@/components/Landing/Mobile/TestimonialSectionMobile";
-import { CallToActionSectionMobile } from "@/components/Landing/Mobile/CallToActionSectionMobile";
 import Script from "next/script";
 
 export default function MobileLanding() {
@@ -12,13 +17,24 @@ export default function MobileLanding() {
     <>
       <MobileHeader />
       <main>
-        <HeroSectionMobile />
-        <FeatureLayoutSectionMobile />
-        <TestimonialSectionMobile />
-        <div id="call-to-action">
-          <CallToActionSectionMobile />
+        <HeroSection />
+        <SocialProof />
+        <DailySignals />
+        <div className="bg-white">
+          <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
+            <div className="py-20">
+              <InDepthResearch />
+            </div>
+          </div>
         </div>
+        <ImplementationTimeline />
+        <Customization />
+        <Integrations />
+        <Testimonials />
+        <Faq />
+        <FinalCta />
       </main>
+      <Footer />
 
       <Script
         id="cal-embed"
@@ -57,6 +73,67 @@ export default function MobileLanding() {
               "hideEventTypeDetails":false,
               "layout":"month_view"
             });
+          `
+        }}
+      />
+
+      <Script
+        id="header-scroll-animation"
+        strategy="lazyOnload"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              let showBookDemo = false;
+              const button = document.querySelector('.scroll-triggered-button');
+
+              if (!button) return;
+
+              button.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
+
+              const handleScroll = () => {
+                const heroSection = document.getElementById('hero-section');
+                const finalCtaSection = document.getElementById('final-cta-section');
+                const headerHeight = 80;
+
+                let shouldShowButton = true;
+
+                if (heroSection) {
+                  const heroBottom = heroSection.getBoundingClientRect().bottom;
+                  if (heroBottom > headerHeight) {
+                    shouldShowButton = false;
+                  }
+                }
+
+                if (finalCtaSection && shouldShowButton) {
+                  const finalCtaRect = finalCtaSection.getBoundingClientRect();
+                  const finalCtaTop = finalCtaRect.top;
+                  const finalCtaBottom = finalCtaRect.bottom;
+                  const windowHeight = window.innerHeight;
+                  const triggerDistance = 300;
+
+                  if (finalCtaTop < (windowHeight - triggerDistance) && finalCtaBottom > headerHeight) {
+                    shouldShowButton = false;
+                  }
+                }
+
+                if (shouldShowButton !== showBookDemo) {
+                  showBookDemo = shouldShowButton;
+
+                  if (shouldShowButton) {
+                    button.style.opacity = '1';
+                    button.style.transform = 'translateX(0)';
+                    button.style.pointerEvents = 'auto';
+                  } else {
+                    button.style.opacity = '0';
+                    button.style.transform = 'translateX(20px)';
+                    button.style.pointerEvents = 'none';
+                  }
+                }
+              };
+
+              window.addEventListener('scroll', handleScroll);
+              handleScroll();
+            })();
           `
         }}
       />

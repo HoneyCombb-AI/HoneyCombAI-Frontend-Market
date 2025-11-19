@@ -40,10 +40,9 @@ const HeroSection = () => {
             </div>
 
             {/* Right Image */}
-            <div className="relative">
+            <div className="relative -mx-4 md:mx-0">
               <div
-                className="rounded-xl border
-           border-black/10 bg-white/60 shadow-[0_8px_24px_rgba(0,0,0,0.08)] p-3 w-full"
+                className="rounded-xl border border-black/10 bg-white/60 shadow-[0_8px_24px_rgba(0,0,0,0.08)] p-2 md:p-3 w-full"
               >
                 <Image
                   src="/Dashboard.png"
