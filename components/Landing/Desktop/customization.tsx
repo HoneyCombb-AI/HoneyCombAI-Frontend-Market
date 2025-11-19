@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Customization() {
   return (
-    <section className="bg-white py-[120px]">
+    <section className="bg-white py-[120px] px-4 sm:px-6 lg:px-0">
       <div className="container mx-auto text-center">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-[48px] font-bold leading-[1.2] text-black">

@@ -36,15 +36,15 @@ const DailySignals = () => {
             </div>
           </div>
 
-          <a href="#" className="mt-16 block">
-            <div className="flex w-full items-center justify-center bg-black rounded-lg overflow-hidden p-4">
+          <a href="#" className="mt-16 block -mx-6 md:mx-0">
+            <div className="flex w-full max-w-[900px] mx-auto items-center justify-center rounded-2xl border border-white/20 bg-black/40 p-2 md:p-4">
               <Image
                 src="/Signals.png"
                 alt="Daily Signals Dashboard"
                 width={900}
                 height={500}
                 loading="lazy"
-                className="w-full max-w-4xl h-auto object-contain rounded border border-white/20"
+                className="h-auto w-full max-w-full rounded-lg object-contain"
               />
             </div>
           </a>

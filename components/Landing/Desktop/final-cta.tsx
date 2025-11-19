@@ -61,16 +61,16 @@ const FinalCta = () => {
             </div>
 
             {/* Right side */}
-            <div className="grid grid-cols-2 gap-4 sm:gap-6">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               {promoBadges.map(({ icon: Icon, label }) => (
                 <div
                   key={label}
-                  className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 text-white shadow-sm"
+                  className="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 p-3 text-white shadow-sm sm:gap-3 sm:p-4"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/10">
                     <Icon className="h-5 w-5" />
                   </div>
-                  <p className="text-sm font-semibold leading-snug">{label}</p>
+                  <p className="text-xs font-semibold leading-snug break-words sm:text-sm">{label}</p>
                 </div>
               ))}
             </div>
