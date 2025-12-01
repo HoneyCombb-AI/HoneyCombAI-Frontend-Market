@@ -1,14 +1,15 @@
-import Customization from "@/components/Landing/Desktop/customization";
 import DailySignals from "@/components/Landing/Desktop/daily-signals";
-import Faq from "@/components/Landing/Desktop/faq";
 import FinalCta from "@/components/Landing/Desktop/final-cta";
 import Footer from "@/components/Landing/Desktop/footer";
 import HeroSection from "@/components/Landing/Desktop/hero";
-import ImplementationTimeline from "@/components/Landing/Desktop/implementation-timeline";
 import InDepthResearch from "@/components/Landing/Desktop/in-depth-research";
 import Integrations from "@/components/Landing/Desktop/integrations";
 import SocialProof from "@/components/Landing/Desktop/social-proof";
 import Testimonials from "@/components/Landing/Desktop/testimonials";
+import ProblemSection from "@/components/Landing/Desktop/problem-section";
+import ResultsSection from "@/components/Landing/Desktop/results-section";
+import TheStack from "@/components/Landing/Desktop/the-stack";
+import UseCases from "@/components/Landing/Desktop/use-cases";
 import { MobileHeader } from "@/components/Landing/Mobile/MobileHeader";
 import Script from "next/script";
 
@@ -19,19 +20,14 @@ export default function MobileLanding() {
       <main>
         <HeroSection />
         <SocialProof />
+        <ProblemSection />
+        <TheStack />
+        <UseCases />
         <DailySignals />
-        <div className="bg-white">
-          <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
-            <div className="py-20">
-              <InDepthResearch />
-            </div>
-          </div>
-        </div>
-        <ImplementationTimeline />
-        <Customization />
+        <InDepthResearch />
+        <ResultsSection />
         <Integrations />
         <Testimonials />
-        <Faq />
         <FinalCta />
       </main>
       <Footer />

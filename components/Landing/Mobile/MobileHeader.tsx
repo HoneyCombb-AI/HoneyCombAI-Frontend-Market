@@ -16,12 +16,20 @@ export function MobileHeader() {
             <span className="text-xs font-medium text-black">AI</span>
           </div>
         </Link>
-        <Link
-          href="/support"
-          className="text-sm font-medium text-black underline-offset-4 hover:underline"
-        >
-          Support
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-black underline-offset-4 hover:underline"
+          >
+            Blog
+          </Link>
+          <Link
+            href="/support"
+            className="text-sm font-medium text-black underline-offset-4 hover:underline"
+          >
+            Support
+          </Link>
+        </div>
       </div>
     </header>
   );
