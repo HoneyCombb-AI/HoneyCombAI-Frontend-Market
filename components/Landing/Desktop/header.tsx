@@ -43,6 +43,9 @@ const Header = () => {
                 Enter App
               </span>
             </a>
+            <Link href="/blog" className="cursor-pointer text-nav text-black px-2 sm:px-4 py-2 hover:bg-white rounded-md text-sm sm:text-base">
+              Blog
+            </Link>
             <Link href="/support" className="cursor-pointer text-nav text-black px-2 sm:px-4 py-2 hover:bg-white rounded-md text-sm sm:text-base">
               Support
             </Link>

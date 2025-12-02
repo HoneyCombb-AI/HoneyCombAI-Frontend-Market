@@ -30,8 +30,8 @@ const testimonialsData: Testimonial[] = [
 
 const TestimonialCard = ({ name, title, quoteHeadline, quoteBody, avatarUrl, avatarAlt }: Testimonial) => {
   return (
-    <div className="bg-[#2C2C2C] text-white rounded-2xl p-8 flex flex-col h-full">
-      <div className="rounded-full mb-8 overflow-hidden border-2 border-gray-600" style={{ width: 96, height: 96 }}>
+    <div className="bg-[#111111] border border-white/10 text-white rounded-2xl p-8 flex flex-col h-full hover:border-amber-500/30 transition-colors duration-300">
+      <div className="rounded-full mb-8 overflow-hidden border-2 border-amber-500/20" style={{ width: 96, height: 96 }}>
         <Image
           src={avatarUrl}
           alt={avatarAlt}
@@ -42,7 +42,7 @@ const TestimonialCard = ({ name, title, quoteHeadline, quoteBody, avatarUrl, ava
         />
       </div>
 
-      <h3 className="text-2xl font-semibold leading-snug mb-4 text-amber-300">
+      <h3 className="text-2xl font-semibold leading-snug mb-4 text-amber-400">
         {quoteHeadline}
       </h3>
       <p className="text-base text-gray-300 flex-grow mb-8 font-normal leading-relaxed">
@@ -50,7 +50,7 @@ const TestimonialCard = ({ name, title, quoteHeadline, quoteBody, avatarUrl, ava
       </p>
       <div className="mt-auto">
         <p className="font-semibold text-base text-white">{name}</p>
-        <p className="text-sm text-gray-400 !whitespace-pre-line">{title}</p>
+        <p className="text-sm text-gray-500 !whitespace-pre-line">{title}</p>
       </div>
     </div>);
 
@@ -58,15 +58,17 @@ const TestimonialCard = ({ name, title, quoteHeadline, quoteBody, avatarUrl, ava
 
 const Testimonials = () => {
   return (
-    <section className="bg-white py-[120px]">
+    <section className="bg-[#0A0A0A] py-[120px] border-t border-white/5">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-6xl mx-auto">
-          <h2 className="font-bold text-black text-[48px] leading-[1.2]">
+          <h2 className="font-bold text-white text-[48px] leading-[1.2]">
             Don&apos;t Just Take Our
             <br />
-            Word for It
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500">
+              Word for It
+            </span>
           </h2>
-          <p className="mt-6 text-dark-gray text-[20px] leading-[1.6]">
+          <p className="mt-6 text-gray-400 text-[20px] leading-[1.6]">
             Trusted by modern outbound and revenue teams.
           </p>
         </div>

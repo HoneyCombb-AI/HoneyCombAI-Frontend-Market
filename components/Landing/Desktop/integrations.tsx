@@ -65,35 +65,64 @@ const logos = [
 
 export default function Integrations() {
   return (
-    <section className="bg-white py-[120px]">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-16">
-          <div className="flex-shrink-0 text-center lg:text-left">
-            <h2 className="text-[32px] font-semibold leading-[1.3] text-foreground">
-              Export the data to your favorite tools.
+    <section className="bg-white py-24 lg:py-32 relative overflow-hidden">
+      {/* Background Amber Glow */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 blur-[100px] rounded-full pointer-events-none" />
+
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
+          {/* Left Content */}
+          <div className="flex-shrink-0 text-center lg:text-left max-w-xl">
+            <span className="inline-block py-1 px-3 rounded-full bg-amber-100 border border-amber-200 text-amber-700 text-sm font-bold tracking-wide uppercase mb-6">
+              Seamless Connectivity
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold leading-tight text-black mb-6">
+              Orchestrates With <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-yellow-600">
+                Your Existing Stack
+              </span>
             </h2>
-            <p className="mt-4 text-body-regular">
-              Custom Integrations to your CRM or CSV Exports to Sequencing Tools.
+            <p className="text-xl text-gray-600 leading-relaxed">
+              HoneyComb feeds intelligence directly into your CRM and engagement tools. No new tabs. No data silos. Just pure orchestration.
             </p>
+            
+            <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <div className="flex items-center gap-2 text-black font-medium">
+                <div className="w-2 h-2 rounded-full bg-green-500" />
+                <span>Bi-directional Sync</span>
+              </div>
+              <div className="hidden sm:block w-1 h-1 rounded-full bg-gray-300" />
+              <div className="flex items-center gap-2 text-black font-medium">
+                <div className="w-2 h-2 rounded-full bg-green-500" />
+                <span>Real-time Updates</span>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col items-center">
-            <div className="grid w-full grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
+
+          {/* Right Content - Logo Grid */}
+          <div className="flex flex-col items-center w-full max-w-2xl">
+            <div className="grid w-full grid-cols-2 sm:grid-cols-3 gap-6">
               {logos.map((logo) => (
-                <div key={logo.alt} className="flex h-16 items-center justify-center">
+                <div 
+                  key={logo.alt} 
+                  className="group flex h-24 items-center justify-center p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-amber-200 transition-all duration-300"
+                >
                   <Image
                     src={logo.src}
                     alt={logo.alt}
                     width={logo.width}
                     height={logo.height}
                     loading="lazy"
-                    className="max-h-12 w-auto object-contain"
+                    className="max-h-10 w-auto object-contain filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
                   />
                 </div>
               ))}
+              
+              {/* "More" Card */}
+              <div className="flex h-24 items-center justify-center p-6 bg-amber-50 rounded-xl border border-amber-100">
+                <span className="text-amber-700 font-bold text-lg">30+ More</span>
+              </div>
             </div>
-            <p className="mt-10 text-center text-small">
-              30+ Other Connections
-            </p>
           </div>
         </div>
       </div>

@@ -15,14 +15,12 @@ const HeroSection = () => {
             <div className="text-center lg:text-left">
               {/* Headline */}
               <h1 className="text-5xl font-extrabold tracking-tight text-black sm:text-6xl lg:text-[72px] lg:leading-[1.1]">
-                Start selling to customers who already want to buy
+                The System of Intelligence for the Mid-Funnel
               </h1>
 
               {/* Subtitle */}
               <p className="mt-6 text-xl leading-8 text-neutral-900 !whitespace-pre-line">
-                Honeycomb monitors news, social media, job postings, and company
-                research, then routes verified signals so your reps act first
-                with full context.
+                Stop losing 60–80% of deals in the &apos;missing middle&apos;. HoneyComb orchestrates every action across Marketing, SDRs, and AEs—automatically.
               </p>
 
               {/* CTAs */}

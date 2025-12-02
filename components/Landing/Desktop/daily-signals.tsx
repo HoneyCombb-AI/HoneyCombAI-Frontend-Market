@@ -6,7 +6,7 @@ const DailySignals = () => {
       <div className="mx-auto max-w-[1200px] px-6 py-[120px] md:px-10">
         <div className="mb-20 text-center">
           <h1 className="text-white text-5xl font-bold leading-tight">
-            Every Sales Team Needs a Researcher
+            The Radar That Never Sleeps
           </h1>
         </div>
 
@@ -17,21 +17,16 @@ const DailySignals = () => {
                 &ldquo;Honeycomb has transformed our outbound strategy&rdquo;
               </p>
               <h2 className="mt-4 text-white text-5xl font-bold leading-tight">
-                Daily Signals
+                Continuous Market Monitoring
               </h2>
             </div>
             <div className="mt-8 lg:mt-0">
               <p className="text-gray-300 text-xl leading-relaxed">
-                Track sales signals across all your accounts to{" "}
+                While your team sleeps, HoneyComb monitors millions of data points.{" "}
                 <strong className="font-semibold text-white">
-                  uncover opportunities as they happen
+                  Funding, hiring, product launches, social engagement
                 </strong>
-                . From specific keywords in job postings to executives
-                discussing next year&apos;s plans, sales signals help you{" "}
-                <strong className="font-semibold text-white">
-                  engage at the right time
-                </strong>
-                .
+                —captured instantly. We filter the noise so you only see what matters.
               </p>
             </div>
           </div>

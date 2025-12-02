@@ -4,7 +4,7 @@ import { Linkedin } from 'lucide-react';
 
 
 const resourcesLinks = [
-  { text: "FAQ", href: "/#faq" },
+  { text: "Blog", href: "/blog" },
 ];
 
 const FooterLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
