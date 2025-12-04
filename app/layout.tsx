@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Honey Comb AI",
-  description: "B2B sales syatem!",
+  description: "B2B sales system!",
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
