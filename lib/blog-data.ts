@@ -124,6 +124,148 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Ankush Nagathan",
     role: "CEO of HoneyComb",
     category: "Manifesto"
+  },
+  {
+    slug: "signals-vs-intent",
+    title: "ABM & Intent Data Were the First Generation. Signals and GTM Intelligence is the Future.",
+    excerpt: "For more than a decade, Account-Based Marketing (ABM) ran on one fundamental input: intent data. But the world it was built for no longer exists. Signals are the new intelligence layer.",
+    content: `
+      <p class="mb-6 text-lg leading-relaxed">For more than a decade, Account-Based Marketing (ABM) ran on one fundamental input: intent data.</p>
+      <p class="mb-6 text-lg leading-relaxed">When companies like Bombora, G2, and later 6sense turned intent into a category, it reshaped how marketing prioritized accounts. It was seen as the missing intelligence layer — the promise that “if an account is researching your problem, you’ll know.”</p>
+      
+      <p class="mb-6 text-lg leading-relaxed">It was groundbreaking for its time.</p>
+      <p class="mb-6 text-lg leading-relaxed">But the world it was built for no longer exists.</p>
+      
+      <p class="mb-6 text-lg leading-relaxed">Buying behavior has changed. Committees have expanded. Digital noise has exploded. Stakeholders move faster than intent data can refresh.</p>
+      
+      <p class="mb-8 text-lg leading-relaxed">And today, the truth is simple: <strong>Intent data and first-generation ABM cannot keep up with how enterprise deals actually move.</strong></p>
+
+      <h2 class="text-3xl font-bold mb-6 mt-12 text-gray-900">Where ABM + Intent Fall Short (And Why They’re Mostly Noise Now)</h2>
+      
+      <p class="mb-6 text-lg leading-relaxed">Classic ABM models rely heavily on broad signals: keyword surges, category consumption, comparison pages, IP lookups, and inferred interest.</p>
+      <p class="mb-6 text-lg leading-relaxed">But here’s the problem:</p>
+      
+      <div class="bg-yellow-50 p-6 rounded-xl mb-8 border border-yellow-100">
+        <p class="font-medium text-gray-900">Intent does not tell you a company is interested. It tells you someone, somewhere in that company triggered an anonymous activity spike.</p>
+      </div>
+
+      <p class="mb-6 text-lg leading-relaxed">That could be:</p>
+      
+      <ul class="list-disc pl-6 mb-8 space-y-3 text-lg text-gray-700 marker:text-yellow-500">
+        <li>An intern researching a college project</li>
+        <li>A competitor checking your pricing</li>
+        <li>A vendor browsing your content</li>
+        <li>A random employee Googling an article that loosely matches your space</li>
+      </ul>
+
+      <p class="mb-6 text-lg leading-relaxed"><strong>Intent is not conviction. It’s not buying behavior. It’s not deal movement.</strong></p>
+      <p class="mb-8 text-lg leading-relaxed">Most of the time, it’s noise disguised as insight.</p>
+
+      <p class="mb-6 text-lg leading-relaxed">And this is why intent + ABM fall apart in real enterprise cycles:</p>
+      <ul class="list-disc pl-6 mb-8 space-y-3 text-lg text-gray-700 marker:text-yellow-500">
+        <li>It’s account-level, not human-level — you don’t know who actually cares.</li>
+        <li>It has no context — spikes mean nothing without the “why.”</li>
+        <li>It arrives late — weekly surges don’t support real-time selling.</li>
+        <li>It ignores internal dynamics — reorgs, politics, influence shifts.</li>
+        <li>It doesn’t enable personalization — too broad for persona-level relevance.</li>
+        <li>It gives no actionable next step — reps still guess what to do.</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold mb-6 mt-12 text-gray-900">Signals: The Real Indicators of Deal Movement</h2>
+      
+      <p class="mb-6 text-lg leading-relaxed">Signals are the micro-movements, human behaviors, organizational changes, and contextual shifts inside an account that actually influence a deal.</p>
+      <p class="mb-6 text-lg leading-relaxed">They’re real. They’re specific. They’re time-sensitive. They’re actionable.</p>
+      
+      <p class="mb-6 text-lg leading-relaxed">Here are stronger, more complete examples:</p>
+
+      <h3 class="text-xl font-bold mb-3 mt-8 text-gray-900">Stakeholder Signals</h3>
+      <ul class="list-disc pl-6 mb-8 space-y-3 text-lg text-gray-700 marker:text-yellow-500">
+        <li>A VP shares an article about a problem your product solves</li>
+        <li>A compliance head comments on a regulatory update</li>
+        <li>A champion suddenly stops engaging (engagement decay)</li>
+        <li>A new director joins with a background in a competing solution</li>
+        <li>A CTO publicly discusses a shift to cloud-first strategy</li>
+        <li>A security architect likes content about breach prevention</li>
+        <li>A procurement officer follows your company page</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mb-3 mt-8 text-gray-900">Organizational Signals</h3>
+      <ul class="list-disc pl-6 mb-8 space-y-3 text-lg text-gray-700 marker:text-yellow-500">
+        <li>A hiring spike in a function tied to your value proposition</li>
+        <li>A major customer win announced by the target account</li>
+        <li>A restructuring that changes decision authority lines</li>
+        <li>A board member joining with experience in your category</li>
+        <li>A press release signaling a transformation mandate</li>
+        <li>A new CFO known for cost optimization initiatives</li>
+      </ul>
+
+      <h3 class="text-xl font-bold mb-3 mt-8 text-gray-900">Deal Signals</h3>
+      <ul class="list-disc pl-6 mb-8 space-y-3 text-lg text-gray-700 marker:text-yellow-500">
+        <li>New stakeholders viewing the proposal</li>
+        <li>Proposal forwarded internally</li>
+        <li>Lag in replies after weeks of momentum</li>
+        <li>Meeting invites including additional evaluators</li>
+        <li>Increased activity on your website from a specific department</li>
+        <li>Higher-than-usual time spent on security documentation</li>
+      </ul>
+
+      <p class="mb-8 text-lg leading-relaxed font-medium text-gray-900 border-l-4 border-yellow-500 pl-6 py-2 bg-yellow-50/50">These signals matter because they reflect reality inside the deal — not anonymous external noise. Signals show who is leaning in, who is backing out, who is gaining influence, and when the political window is open.</p>
+
+      <p class="mb-6 text-lg leading-relaxed"><strong>Intent data cannot do that. ABM campaigns do not react to that. But modern GTM teams must.</strong></p>
+
+      <h2 class="text-3xl font-bold mb-6 mt-12 text-gray-900">Where Honeycomb Fits In — And Why It’s Built for the Post-Intent Era</h2>
+      
+      <p class="mb-6 text-lg leading-relaxed">Honeycomb is designed for a world where precision matters more than volume, and timing matters more than scoring.</p>
+      <p class="mb-6 text-lg leading-relaxed">Honeycomb doesn’t just surface signals — it understands them, contextualizes them, and turns them into exact next steps for every stakeholder in every account.</p>
+
+      <p class="mb-6 text-lg leading-relaxed">Here’s how:</p>
+
+      <div class="space-y-6 mb-8">
+        <div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">1. Automatic Buying Committee Mapping</h3>
+          <p class="text-gray-700 text-lg">Honeycomb identifies decision-makers, influencers, cross-functional players, and hidden blockers.</p>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">2. Deep Persona Intelligence</h3>
+          <p class="text-gray-700 text-lg">Tone, preferences, DISC profile, channel habits, and role weight — all mapped automatically.</p>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">3. Real-Time Signal Detection</h3>
+          <p class="text-gray-700 text-lg">Honeycomb tracks micro-signals across individuals, teams, and the entire company — the moments that actually drive deal movement.</p>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">4. Action Generation (The Missing Layer in ABM)</h3>
+          <p class="text-gray-700 text-lg">For each stakeholder, Honeycomb recommends the next best action: Who to engage, what to say, when to act, where to act, and how to multi-thread.</p>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900">5. Continuous Learning Loop</h3>
+          <p class="text-gray-700 text-lg">Every action leads to an outcome, and every outcome makes the system smarter.</p>
+        </div>
+      </div>
+
+      <p class="mb-6 text-lg leading-relaxed">It’s not a dashboard. It’s not a report. It’s not “better intent.”</p>
+      <p class="mb-8 text-lg leading-relaxed"><strong>Honeycomb is an orchestration engine driven by real-time signals — the layer ABM never had and intent could never provide.</strong></p>
+
+      <h2 class="text-3xl font-bold mb-6 mt-12 text-gray-900">The First Generation Found Accounts. The Next Generation Moves Deals.</h2>
+      
+      <p class="mb-6 text-lg leading-relaxed">ABM helped identify accounts. Intent helped prioritize them.</p>
+      <p class="mb-6 text-lg leading-relaxed">But neither could explain the human dynamics behind a deal — or guide a seller through them.</p>
+      
+      <p class="mb-6 text-lg leading-relaxed">Signals finally bridge that gap.</p>
+      <p class="mb-6 text-lg leading-relaxed">They show what is happening, why it’s happening, and how a seller should respond.</p>
+      
+      <p class="mb-6 text-lg leading-relaxed">This is the next evolution of GTM. And Honeycomb is building the platform designed for it.</p>
+      <p class="mb-6 text-lg leading-relaxed font-bold">If the last decade belonged to ABM and intent data, the next decade belongs to signals — and to the teams who learn to use them first.</p>
+    `,
+    date: "Dec 7, 2025",
+    coverImage: "/images/signals-blog-cover.png",
+    author: "Ankush Nagathan",
+    role: "CEO of HoneyComb",
+    category: "Manifesto"
   }
 ];
 
