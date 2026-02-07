@@ -11,6 +11,9 @@ const ResultsSection = () => {
               Produce Real Results
             </span>
           </h2>
+          <p className="mt-6 text-xl text-gray-300 leading-relaxed">
+            HoneyComb makes your SDR team 10x more effective by augmenting their workflow with context, timing, and next best actions—human-in-the-loop.
+          </p>
         </div>
 
         {/* Stats Cards */}

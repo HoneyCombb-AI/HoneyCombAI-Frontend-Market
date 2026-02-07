@@ -14,11 +14,11 @@ const ProblemSection = () => {
               </span>
             </h2>
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight leading-tight">
-              The Invisible Chokepoint in <br className="hidden md:block" />
-              Your Revenue Engine
+              Engagement at Scale is the <br className="hidden md:block" />
+              Missing GTM Capability
             </h3>
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto font-medium">
-              Most companies think their revenue problems come from not getting enough leads or not closing enough deals. But the real revenue leak happens in the middle—in the quiet, unowned space between interest and purchase.
+              Revenue teams lose momentum both before pipeline exists and after the first meeting. Pre-pipeline, it&apos;s hard to build mindshare with the right stakeholders. Post-meeting, signals get missed, follow-through drifts, and buying committees go dark. Doing this manually—multi-stakeholder, coordinated engagement with persona-level relevance—isn&apos;t possible at scale.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ const ProblemSection = () => {
                   <h3 className="text-2xl font-bold text-white">Current State</h3>
                 </div>
                 <p className="text-gray-400 leading-relaxed text-lg">
-                  Sales cycles are longer. Buying committees are fragmented. Deals stall after the first call. Your CRM shows &quot;Qualified&quot; but momentum dies silently.
+                  Generic targeting, single-threaded outreach, and &quot;by default&quot; sequences. Reps can&apos;t coordinate across stakeholders, and they can&apos;t keep up with the sheer volume of intent signals. After the first meeting, engagement decays and momentum quietly disappears.
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ const ProblemSection = () => {
                   <h3 className="text-2xl font-bold text-white">The Alternative</h3>
                 </div>
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  HoneyComb is the brain of your GTM motion. It maps stakeholders, reads signals, plans actions, and keeps your brand top-of-mind—automatically.
+                  HoneyComb is the intelligence layer behind your GTM motion. It reads first-party and third-party intent signals, maps buying committees and buyer roles, understands persona context, and recommends the next best action per stakeholder. It augments your SDRs (human-in-the-loop) with precise, automated one-to-one personalization and coordinated engagement—so deals keep moving without relying on memory or manual effort.
                 </p>
               </div>
             </div>
@@ -64,10 +64,10 @@ const ProblemSection = () => {
           {/* Why it Matters Stat */}
           <div className="mt-12 text-center">
             <div className="inline-flex items-center gap-4 px-6 py-4 rounded-xl bg-white/5 border border-white/10">
-              <span className="text-4xl font-bold text-white">60–80%</span>
+              <span className="text-4xl font-bold text-white">At scale</span>
               <span className="text-left text-sm text-gray-400 leading-snug">
-                of deals die in the mid-funnel<br />
-                because no system is orchestrating the chaos.
+                personalization + coordination + follow-through<br />
+                become impossible without an intelligence layer.
               </span>
             </div>
           </div>

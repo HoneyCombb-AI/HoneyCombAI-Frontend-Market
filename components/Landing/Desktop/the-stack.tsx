@@ -9,7 +9,7 @@ const TheStack = () => {
               Where HoneyComb Lives in Your Stack
             </h3>
             <p className="text-lg text-gray-400">
-              The modern GTM stack has 3 layers. Most companies are missing the top one.
+              Your GTM stack stores data (CRM) and executes outreach (sequencers). The missing layer is the one that reads signals, decides what to do next, and coordinates engagement across stakeholders—pre-pipeline and post-meeting.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ const TheStack = () => {
                     </div>
                     <p className="text-gray-300 mb-1 font-medium">HoneyComb</p>
                     <p className="text-gray-500 text-sm">
-                      Reads signals, plans actions, orchestrates across people, and improves itself automatically.
+                      Reads first-party + third-party intent signals, recommends next best actions, orchestrates multi-stakeholder engagement, and learns from outcomes.
                     </p>
                   </div>
                 </div>
@@ -58,7 +58,7 @@ const TheStack = () => {
                     <h4 className="text-lg font-bold text-white mb-1">System of Engagement (SOE)</h4>
                     <p className="text-gray-300 text-sm mb-1">Outreach / Salesloft</p>
                     <p className="text-gray-400 text-xs">
-                      Executes sequences blindly. Doesn&apos;t know &quot;when&quot; or &quot;why&quot;.
+                      Executes steps. But without context, timing, or buyer-group coordination, it can&apos;t sustain mindshare or adapt to signals.
                     </p>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ const TheStack = () => {
                     <h4 className="text-lg font-bold text-white mb-1">System of Record (SOR)</h4>
                     <p className="text-gray-300 text-sm mb-1">Salesforce / HubSpot</p>
                     <p className="text-gray-400 text-xs">
-                      Stores data. Doesn&apos;t tell you what to do next.
+                      Stores activity and pipeline. Doesn&apos;t tell you which accounts to work, who to engage, or what to do next.
                     </p>
                   </div>
                 </div>
