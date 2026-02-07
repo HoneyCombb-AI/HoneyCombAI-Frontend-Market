@@ -14,7 +14,7 @@ const DailySignals = () => {
           <div className="grid grid-cols-1 items-start gap-x-12 lg:grid-cols-2">
             <div>
               <p className="text-gray-400 text-xl leading-relaxed">
-                &ldquo;Honeycomb has transformed our outbound strategy&rdquo;
+                &ldquo;HoneyComb keeps our deals moving.&rdquo;
               </p>
               <h2 className="mt-4 text-white text-5xl font-bold leading-tight">
                 Continuous Market Monitoring
@@ -22,11 +22,10 @@ const DailySignals = () => {
             </div>
             <div className="mt-8 lg:mt-0">
               <p className="text-gray-300 text-xl leading-relaxed">
-                While your team sleeps, HoneyComb monitors millions of data points.{" "}
-                <strong className="font-semibold text-white">
-                  Funding, hiring, product launches, social engagement
-                </strong>
-                —captured instantly. We filter the noise so you only see what matters.
+                HoneyComb continuously monitors the market and your buyers to detect the signals that matter. We combine{" "}
+                <strong className="font-semibold text-white">third-party market signals</strong>{" "}
+                with <strong className="font-semibold text-white">first-party intent</strong>{" "}
+                from your own buyer interactions. Then we filter the noise, explain what matters now, and orchestrate the right actions—so engagement stays coordinated across the buying committee.
               </p>
             </div>
           </div>
@@ -43,7 +42,9 @@ const DailySignals = () => {
               />
             </div>
           </a>
-          <p className="mt-2 text-center font-semibold text-xs text-white">&ldquo;Unique to our Sales requirements&rdquo;</p>
+          <p className="mt-2 text-center font-semibold text-xs text-white">
+            &ldquo;Unique to our Sales requirements&rdquo;
+          </p>
         </section>
       </div>
     </section>

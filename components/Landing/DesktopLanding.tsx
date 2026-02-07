@@ -4,6 +4,7 @@ import Footer from "@/components/Landing/Desktop/footer";
 import Header from "@/components/Landing/Desktop/header";
 import HeroSection from "@/components/Landing/Desktop/hero";
 import InDepthResearch from "@/components/Landing/Desktop/in-depth-research";
+import LearningLoop from "@/components/Landing/Desktop/learning-loop";
 import Integrations from "@/components/Landing/Desktop/integrations";
 import SocialProof from "@/components/Landing/Desktop/social-proof";
 import Testimonials from "@/components/Landing/Desktop/testimonials";
@@ -27,6 +28,7 @@ export default function DesktopLanding() {
         <DailySignals />
 
         <InDepthResearch />
+        <LearningLoop />
         <ResultsSection />
         <Integrations />
         <Testimonials />

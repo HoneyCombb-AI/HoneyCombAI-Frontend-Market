@@ -83,7 +83,7 @@ export default function Integrations() {
               </span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              HoneyComb feeds intelligence directly into your CRM and engagement tools. No new tabs. No data silos. Just pure orchestration.
+              HoneyComb feeds intelligence directly into your CRM, engagement tools, and meeting workflows. No new tabs. No data silos. Just pure orchestration across pre-pipeline and post-meeting execution.
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">

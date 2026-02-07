@@ -15,12 +15,12 @@ const HeroSection = () => {
             <div className="text-center lg:text-left">
               {/* Headline */}
               <h1 className="text-5xl font-extrabold tracking-tight text-black sm:text-6xl lg:text-[72px] lg:leading-[1.1]">
-                The System of Intelligence for the Mid-Funnel
+                The GTM Intelligence Layer for Complex B2B Teams
               </h1>
 
               {/* Subtitle */}
               <p className="mt-6 text-xl leading-8 text-neutral-900 !whitespace-pre-line">
-                Stop losing 60–80% of deals in the &apos;missing middle&apos;. HoneyComb orchestrates every action across Marketing, SDRs, and AEs—automatically.
+                The AI for engagement that keeps deals moving—throughout your sales process. We map stakeholders, coordinate buying committees, and recommend next best actions based on custom intent signals and deal stage.
               </p>
 
               {/* CTAs */}

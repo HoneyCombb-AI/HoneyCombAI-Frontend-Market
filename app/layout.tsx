@@ -5,7 +5,8 @@ import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Honey Comb AI",
-  description: "B2B Sales system answering Who to contact? When to? And how to? In the AI era.",
+  description:
+    "The GTM Intelligence Layer for complex B2B revenue teams—reads intent signals, coordinates engagement, and keeps deals moving from pre-pipeline through post-meeting execution.",
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },

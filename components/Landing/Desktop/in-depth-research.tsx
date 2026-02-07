@@ -11,20 +11,21 @@ const InDepthResearch = () => {
               Deep Account Intelligence
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
-              Stop asking basic questions.
+              Stop guessing what to do next.
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              HoneyComb builds a living dossier on every account, mapping{" "}
-              <strong className="text-black">stakeholders, strategies, and pain points</strong>{" "}
-              before you ever reach out.
+              HoneyComb builds a living dossier on every account—mapping{" "}
+              <strong className="text-black">stakeholders, signals, strategies, and pain points</strong>{" "}
+              so your team can engage with the right message, on the right channel, at the right time.
             </p>
             
             <div className="flex flex-col gap-4">
               {[
                 "Buying signals tracked in real-time",
-                "Engagement hooks tailored to each persona",
-                "Timing relevance scoring",
-                "Explicit pain point identification"
+                "Persona-based messaging angles (not generic personalization)",
+                "Coordinated engagement + follow-through recommendations",
+                "Timing relevance scoring + next best action",
+                "Clear rationale: why this account / stakeholder / now"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">

@@ -13,11 +13,11 @@ const UseCases = () => {
       label: "SDRs",
       icon: Target,
       title: "Automate the Grunt Work",
-      description: "Stop wasting hours on research. HoneyComb builds dossiers, drafts hyper-personalized emails, and tells you exactly when to reach out.",
+      description: "Focus on selling, not busywork. HoneyComb gives SDRs a crisp account brief, explains why now is the right time, automates personalized outreach on email and LinkedIn, and recommends the next best action based on real signals.",
       benefits: [
-        "Automated account research & mapping",
-        "Signal-based outreach triggers",
-        "Personalized email drafting"
+        "Account briefs + stakeholder mapping",
+        "Signal-based timing and prioritization",
+        "Automated one-to-one personalization"
       ]
     },
     {
@@ -25,11 +25,11 @@ const UseCases = () => {
       label: "AEs",
       icon: Users,
       title: "Close Deals Faster",
-      description: "Walk into every meeting knowing the stakeholders, their pain points, and the company's strategic priorities. No more cold discovery.",
+      description: "After the first meeting, keep momentum. HoneyComb reacts to first-party intent + third-party signals and keeps engagement consistent across stakeholders.",
       benefits: [
-        "Pre-meeting briefing dossiers",
-        "Stakeholder relationship mapping",
-        "Competitive intelligence"
+        "Pre-meeting briefs + stakeholder relationship mapping",
+        "Next best action + follow-up plans that don’t drift",
+        "Signal-driven engagement to keep mindshare"
       ]
     },
     {
@@ -37,11 +37,11 @@ const UseCases = () => {
       label: "Marketing",
       icon: BarChart3,
       title: "Align with Sales",
-      description: "Feed your campaigns with real-time market signals. Target accounts that are actually in-market, not just fitting a static ICP.",
+      description: "Turn intent into coordinated engagement. HoneyComb aligns campaigns, outbound, and follow-ups into one coherent story per buyer role.",
       benefits: [
-        "Dynamic ICP refinement",
-        "Signal-based campaign triggers",
-        "Attribution that makes sense"
+        "Dynamic ICP refinement with conversion-linked signals",
+        "Buyer-group coverage (not single-threaded leads)",
+        "Closed-loop learnings from outcomes"
       ]
     },
     {
@@ -49,11 +49,11 @@ const UseCases = () => {
       label: "Leadership",
       icon: ShieldCheck,
       title: "Predictable Revenue",
-      description: "Get a bird's eye view of your market. Understand where the opportunities are and ensure your team is executing on the best ones.",
+      description: "Own engagement upstream and downstream. See which signals matter, what actions are being taken, and why pipeline is (or isn’t) forming.",
       benefits: [
-        "Market coverage visibility",
-        "Pipeline health monitoring",
-        "Strategic resource allocation"
+        "Traceable decisions: why target, why now, why this message",
+        "Pipeline formation + velocity visibility",
+        "Better conversions without brute-force activity"
       ]
     }
   ];
@@ -69,7 +69,7 @@ const UseCases = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Purpose-built agents that augment your workflow, not replace it.
+            Agents that coordinate engagement across buyer roles, channels, and timing—so deals keep moving.
           </p>
         </div>
 
